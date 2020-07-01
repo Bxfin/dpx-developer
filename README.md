@@ -53,7 +53,7 @@ Refer the Postman example to request echo endpoint
 
 DPX provides public Swagger documents for the latest API specification.
 
-- <a href="https://rc.dpxpricing.com/swagger" target="_blank">Connect API V1 document</a>
+- <a href="https://dev.dpxpricing.com/swagger" target="_blank">Connect API V1 document</a>
 
 
 #### <span id="connect-api-changelog"> API Changelog
