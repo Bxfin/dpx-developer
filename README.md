@@ -7,7 +7,7 @@
     -  [Authentication](#connect-api-auth)
     -  [Example Request](#connect-api-request)
     -  [V1 Specification](#connect-api-specification)
-    -  [Changelog](#connect-api-changelog)    
+    -  [Changelog](#connect-api-changelog)
 
 ### <span id="dpx-general"></span>DPX Technology
 DPX is financial pricing software built on the modern web application architecture and technical stacks.
@@ -36,12 +36,18 @@ To access the APIs, the client system should include `x-api-key` in the request 
 
 You can get the api-key from tenant admin page or your system admin.
 
+#### Impersonating as an existing user
+You can also execute an API under a specific DPX user context. By impersonating the user, all actions will be executed and audited as the impersonating user. For doing this an additional request header, `x-dpx-username` can be sent as part of the request. The username passed in the header must be a valid and active user.
+
+> Note that when using impersonation, user must have access to the actions being performed in the API, otherwise the request may fail with Http 403 error.
+
 #### <span id="connect-api-request"> Example Request
 
 To request, you need to include the following http headers.
 
-- `Content-Type` : application/json
-- `x-api-key` : -your-api-key
+- `Content-Type`: application/json
+- `x-api-key`: your-api-key
+- `x-dpx-username`: DPX username under whose context the API will execute [optional]
 
 Refer the Postman example to request echo endpoint
 
