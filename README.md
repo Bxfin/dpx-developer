@@ -53,7 +53,11 @@ Refer the Postman example to request echo endpoint
 
 [GET] `/connect/test/echo`
 
+**Sample Request**
 ![alt text](images/Connect_APIs_1.PNG "API Key based request")
+
+**Sample Request _with user-impersonation_**
+![alt text](images/Connect_APIs_2.PNG "API Key based request with impersonation")
 
 #### <span id="connect-api-specification"> API V1 Specification
 
